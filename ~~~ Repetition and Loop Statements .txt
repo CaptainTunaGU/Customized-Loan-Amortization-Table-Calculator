@@ -1,0 +1,31 @@
+~~~ Repetition and Loop Statements ~~~
+
+"Program that creates an output file containing a customized loan amortization table that will program to create an output file containing a customized loan amortization table."
+
+Formula for payment: (iP)/(1-(1+i)^(-n))
+
+Where
+P = principal (amount borrowed)
+i = monthly interest rate
+n = total number of payments
+
+Rounded to the nearest cent, the program will write to the output file n lines showing how the debt is paid off. Each month part of the payment is the monthly interest on the principal balance, and the rest is applied to the principal. Because the payment and each month’s interest are rounded, the final payment will be a bit different and must be calculated as the sum of the final interest payment and the final principal balance. Here is a sample table for a $1000 loan borrowed at a 9% annual interest rate and paid back over 6 months. 
+
+Use:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Principal              $1000.00
+Annual interest    9.0%
+Payment              $171.07
+Term                    6 months
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To produce: 
+
+Payment	Interest	Principal	Principal Balance
+1	7.50	        163.57	        836.43
+2	6.27	        164.80	        671.63
+3	5.04	        166.03	        505.60
+4	3.79	        167.28	        338.32
+5	2.54	        168.53	        169.79
+6	1.27	        169.79	        0.00
+Final payment	        171.06		
